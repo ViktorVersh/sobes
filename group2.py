@@ -21,7 +21,8 @@ axes[0].tick_params(axis='x', rotation=45)  # Поворот подписей о
 axes[0].grid(True)
 
 # Построение круговой диаграммы на втором подграфике
-attendance_by_learn.plot(kind='pie', ax=axes[1], title='Посещаемость по группам (круговая диаграмма)', autopct='%1.1f%%')
+attendance_by_learn.plot(kind='pie', ax=axes[1], title='Посещаемость по группам (круговая диаграмма)',
+                         autopct='%1.1f%%')
 axes[1].set_ylabel('')  # Убираем подпись оси Y для круговой диаграммы
 
 # Настройка общего layout
